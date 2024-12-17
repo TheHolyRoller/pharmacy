@@ -32,7 +32,7 @@ const ItemGrid = ({
             containerClass,
           )}
         >
-          {items.map(({ title, description, icon: Icon, callToAction }, index) => (
+          {items.map(({ title, description, icon: Icon, iconName, callToAction }, index) => (
             <div key={id ? `item-${id}-${index}` : `item-grid-${index}`}>
               <div className={(twMerge('flex flex-row max-w-md'), panelClass)}>
                 <div className="flex justify-center">

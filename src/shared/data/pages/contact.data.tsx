@@ -14,6 +14,8 @@ export const heroContact: HeroProps = {
   tagline: 'Demo Contact Page',
 };
 
+
+
 // Contact data on Contact page *******************
 export const contact2Contact: ContactProps = {
   id: 'contactTwo-on-contact',
@@ -31,42 +33,36 @@ export const contact2Contact: ContactProps = {
     {
       title: 'Our Address',
       description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
-      icon: IconMapPin,
+      iconName: 'map-pin',
     },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
-      icon: IconPhoneCall,
+      title: 'Kontaktoni',
+      description: ['Telefon: 068 929 9077', 'Mail: entellafarmaci@gmail.com'],
+      iconName: 'phone-call',
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
-      icon: IconClock,
+      title: 'Orari i hapjes',
+      description: ['E hënë - E premte: 08:00 - 17:00", "E shtunë & E diel: 08:00 - 12:00'],
+      iconName: 'clock',
     },
   ],
   form: {
     title: 'Ready to Get Started?',
+    action: 'https://submit-form.com/EPq8u563',
     inputs: [
       {
         type: 'text',
-        label: 'First name',
         name: 'name',
         autocomplete: 'off',
-        placeholder: 'First name',
-      },
-      {
-        type: 'text',
-        label: 'Last name',
-        name: 'lastName',
-        autocomplete: 'off',
-        placeholder: 'Last name',
+        placeholder: 'Emri yt',
+        required: true,
       },
       {
         type: 'email',
-        label: 'Email address',
         name: 'email',
         autocomplete: 'on',
-        placeholder: 'Email address',
+        placeholder: 'Adresa e emailit',
+        required: true,
       },
     ],
     radioBtns: {
@@ -113,37 +109,38 @@ export const contact2Contact: ContactProps = {
 // Feature2 data on Contact page *******************
 export const features2Contact: FeaturesProps = {
   columns: 3,
-  header: {
-    title: 'Support Center',
-    subtitle: 'Looking for something in particular?',
-  },
+  // header: {
+  //   title: 'Support Center',
+  //   subtitle: 'Looking for something in particular?',
+  // },
   items: [
-    {
-      title: 'Have a question?',
-      description: 'See our frequently asked questions',
-      icon: IconHelp,
-      callToAction: {
-        text: 'Go to FAQ page',
-        href: '/faqs',
-      },
-    },
-    {
-      title: 'Chat with us',
-      description: 'Live chat with our support team',
-      icon: IconMessages,
-      callToAction: {
-        text: 'Write to us',
-        href: '/',
-      },
-    },
-    {
-      title: 'Get help',
-      description: 'Speak to our team today',
-      icon: IconHeadset,
-      callToAction: {
-        text: 'Call us',
-        href: '/',
-      },
-    },
+    // {
+    //   title: 'Have a question?',
+    //   description: 'See our frequently asked questions',
+    //   icon: IconHelp,
+    //   callToAction: {
+    //     text: 'Go to FAQ page',
+    //     href: '/faqs',
+    //   },
+    // },
+    // {
+    //   title: 'Chat with us',
+    //   description: 'Live chat with our support team',
+    //   icon: IconMessages,
+    //   callToAction: {
+    //     text: 'Write to us',
+    //     href: '/',
+    //   },
+    // },
+    // {
+    //   title: 'Get help',
+    //   description: 'Speak to our team today',
+    //   icon: IconHeadset,
+    //   callToAction: {
+    //     text: 'Call us',
+    //     href: '/',
+    //   },
+    // },
   ],
 };
+

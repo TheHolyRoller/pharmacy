@@ -14,6 +14,7 @@ const Form = ({
   btn,
   btnPosition,
   containerClass,
+  onSubmit,
 }: FormProps) => {
   const [inputValues, setInputValues] = useState([]);
   const [radioBtnValue, setRadioBtnValue] = useState('');
@@ -52,7 +53,7 @@ const Form = ({
   };
 
   return (
-    <form id="contactForm" className={twMerge('', containerClass)}>
+    <form id="contactForm" className={twMerge('', containerClass)} onSubmit={onSubmit}>
       {title && <h2 className={`${description ? 'mb-2' : 'mb-4'} text-2xl font-bold`}>{title}</h2>}
       {description && <p className="mb-4">{description}</p>}
       <div className="mb-6">

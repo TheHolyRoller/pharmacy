@@ -17,6 +17,7 @@ const meta = {
   argTypes: {},
 } satisfies Meta<typeof Component>;
 
+
 export default meta;
 type Story = StoryObj<typeof meta>;
 

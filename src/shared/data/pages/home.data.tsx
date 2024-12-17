@@ -35,42 +35,38 @@ import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
+import analysis from '~/assets/images/analysis.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+     Produkte të besueshme <span className="hidden md:inline">për një jetë të</span> <span>shëndetshme</span> +{' '}
+      <span className="sm:whitespace-nowrap">Farmaci Ester</span>
     </>
+
   ),
   subtitle: (
     <>
-      <span className="hidden md:inline">
+      {/* <span className="hidden md:inline">
         <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
           TailNext
         </span>{' '}
         is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
       </span>{' '}
       It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      optimization. */}
     </>
   ),
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
+    text: 'Kontakto ',
+    href: '/contact',
+
     targetBlank: true,
   },
-  callToAction2: {
-    text: 'Learn more',
-    href: '/',
-  },
-  image: {
-    src: heroImg,
-    alt: 'Hero TailNext',
-  },
+
+
 };
 
 // SocialProof data on Home page *******************
@@ -185,31 +181,32 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    tagline: 'Content',
+    title: 'Shërbime të Besueshme për Analizat e Gjakut',
+    subtitle: 'Përkujdesemi për shëndetin tuaj me analizat më të sakta dhe më të shpejta.',
+    tagline: 'Analizat e Gjakut që ofrojmë',
   },
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Në farmacinë tonë, ne ofrojmë një gamë të gjerë analizash të gjakut për të monitoruar dhe menaxhuar shëndetin tuaj. Përdorim pajisje moderne dhe teknologji të avancuar për t\'ju ofruar rezultate të shpejta dhe të sakta që mund të ju ndihmojnë të kuptoni më mirë gjendjen tuaj shëndetësore.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Shërbime të Avancuara të Analizës',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        'Ne ofrojmë një gamë të gjerë testesh dhe analizash të gjakut për të monitoruar shëndetin tuaj në mënyrë të detajuar. Përdorimi i pajisjeve moderne dhe teknologjisë së lartë siguron rezultate të sakta dhe të shpejta që janë të rëndësishme për një diagnozë të saktë.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Përkujdesje dhe Saktësi në Çdo Hapi',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        'Ne besojmë në përkujdesjen e veçantë për çdo pacient dhe sigurojmë që çdo analizë të realizohet me saktësinë më të lartë. Çdo test është një hap i rëndësishëm për mirëqenien tuaj, dhe ne jemi këtu për t\'ju udhëzuar dhe për t\'ju siguruar që gjithçka të jetë në rregull.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Rezultate të Shpejta dhe të Sakta',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'Me ndihmën e teknologjisë më të avancuar, ne sigurojmë që rezultatet e analizave tuaja të jenë të disponueshme brenda një kohe të shkurtër, duke ju ndihmuar që të merrni vendime të shpejta dhe të informuara për shëndetin tuaj. Ne e dimë sa e rëndësishme është të dini shpejt rezultatet, dhe do të bëjmë gjithçka që mundemi për t\'ju ndihmuar.',
     },
   ],
+
   image: {
-    src: cameraFrontImg,
+    src: analysis,
     alt: 'Colorful Image',
   },
   isReversed: false,
@@ -243,7 +240,7 @@ export const contentHomeTwo: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: analysis,
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -607,53 +604,57 @@ export const teamHome: TeamProps = {
 export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
-    title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
-    tagline: 'Contact',
+    title: 'Kontaktoni',
+    subtitle: 'Na kontaktoni për çdo pyetje ose nevojë',
+    tagline: '',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+   'Na kontaktoni për të ndarë përvojën tuaj me shërbimet tona. Çdo feedback është i çmuar dhe na ndihmon të ofrojmë shërbime më të mira për ju. Jemi këtu për t\'ju dëgjuar dhe për t\'ju ofruar mbështetje.',
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: 'Address',
+      description: ['XXX2+P8X, Rruga e Elbasanit, Cërrik, Albania'],
       icon: IconMapPin,
+      iconName: 'map-pin',
     },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      title: 'Kontaktoni',
+      description: ['Telefon: 068 929 9077', 'Mail: entellafarmaci@gmail.com'],
       icon: IconPhoneCall,
+      iconName: 'phone-call',
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      title: 'Orari i hapjes',
+      description: ['E hënë - E premte: 08:00 - 17:00', 'E shtunë & E diel: 08:00 - 12:00'],
       icon: IconClock,
+      iconName: 'clock',
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
+    action: 'https://submit-form.com/EPq8u563',
+    title: 'Gati për të filluar?',
     inputs: [
       {
         type: 'text',
         name: 'name',
         autocomplete: 'off',
-        placeholder: 'Your name',
+        placeholder: 'Emri yt',
       },
       {
         type: 'email',
         name: 'email',
         autocomplete: 'on',
-        placeholder: 'Your email address',
+        placeholder: 'Adresa e emailit',
       },
     ],
     textarea: {
       cols: 30,
       rows: 5,
       name: 'textarea',
-      placeholder: 'Write your message...',
+      placeholder: 'Shkruaj mesazhin tënd...',
     },
     btn: {
-      title: 'Send Message',
+      title: 'Dërgo mesazhin',
       type: 'submit',
     },
   },
@@ -664,22 +665,10 @@ export const callToAction2Home: CallToActionProps = {
   title: 'Next.js + Tailwind CSS',
   subtitle:
     'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
-  callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-  },
+
   items: [
-    {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
-    },
-    {
-      title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
-    },
+
+
     {
       title: 'Subscribe',
       description: 'Morbi orci nunc, euismod ac dui id, convallis.',

@@ -60,6 +60,7 @@ type Input = {
   name?: string;
   autocomplete?: string;
   placeholder?: string;
+  required?: boolean;
 };
 
 type Textarea = {
@@ -100,6 +101,7 @@ type FormProps = {
   btn: Button;
   btnPosition?: 'center' | 'right' | 'left';
   containerClass?: string;
+  onSubmit?: (e: React.FormEvent<HTMLFormElement>) => void;
 };
 
 type Image = {
@@ -114,6 +116,7 @@ type Item = {
   href?: string;
   form?: SmallForm;
   icon?: Icon;
+  iconName?: string;
   callToAction?: CallToActionType;
 };
 
@@ -233,6 +236,7 @@ type WindowSize = {
   height: number;
 };
 
+
 // WIDGETS
 type HeroProps = {
   title?: string | ReactElement;
@@ -335,11 +339,20 @@ type SocialProofProps = Widget & {
   images: Array<Image>;
 };
 
+type ContactItem = {
+  title: string;
+  description: string[];
+  iconName: string;
+  icon?: Icon;
+};
+
 type ContactProps = Widget & {
   header?: Header;
   content?: string;
-  items?: Array<Item>;
-  form: FormProps;
+  items?: Array<ContactItem>;
+  form: FormProps & {
+    action: string;
+  };
 };
 
 type FooterProps = {

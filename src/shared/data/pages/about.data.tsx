@@ -602,19 +602,23 @@ export const contactAbout: ContactProps = {
       title: 'Our Address',
       description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
       icon: IconMapPin,
+      iconName: 'map-pin',
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: office@example.com'],
       icon: IconPhoneCall,
+      iconName: 'phone-call',
     },
     {
       title: 'Working hours',
       description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
       icon: IconClock,
+      iconName: 'clock',
     },
   ],
   form: {
+    action: 'https://submit-form.com/EPq8u563',
     inputs: [
       {
         type: 'text',
