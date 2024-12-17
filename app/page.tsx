@@ -47,6 +47,7 @@ export default function Page() {
       <Team {...teamHome} />
       <Contact {...contactHome} />
       <CallToAction2 {...callToAction2Home} />
+
     </>
   );
 }
