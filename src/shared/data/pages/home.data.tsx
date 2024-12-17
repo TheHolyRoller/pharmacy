@@ -35,7 +35,8 @@ import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
-import analysis from '~/assets/images/analysis.jpg';
+// import analysis from '~/assets/images/analysis.jpg';
+import analysis from '~/assets/images/Analysis.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
